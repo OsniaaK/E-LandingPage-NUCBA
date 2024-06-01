@@ -1,22 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Freeman&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scrollbar-width: none;
+}
+
 body {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
-    display: flex;
+    color: snow;
+    background: linear-gradient(to bottom right,red, black 70%);
+    margin: 10px 50px 10px 50px;
 }
 
 header {
     display: flex;
     flex: auto;
-    height: 70px;
-    margin: 10px 50px 10px 50px;
+    height: 85px;
     background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(179, 2, 2));
-    box-shadow: rgb(0, 0, 0) 0px 0px 4px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 8px;
 }
 
 #header-img-logo {
@@ -28,22 +35,128 @@ header {
 #nav-header {
     display: flex;
     flex: auto;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin: 0px 0% 0px 30%;
+    justify-content: space-around;
+    margin: 0 0 0 30%;
+    padding: 20px;
 }
 
-.nav-header-sections {
+#nav-header > a {
     display: flex;
     align-items: center;
     color: white;
-    font-size: 18px;
+    font-size: 1.5rem;
     text-decoration: none;
     text-shadow: rgb(0, 0, 0) 1px 1px 1px;
     border-bottom: 1px solid transparent;
+    border-radius: 20px;
     transition: 0.2s;
 }
 
-.nav-header-sections:hover {
+#nav-header > a:hover {
     border-bottom: 1px solid white;
+    border-radius: 0px;
+    transform: scale(1.2);
+}
+
+#portada-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#portada-section > picture{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 20rem;
+    translate: 10%;
+}
+
+#portada-section > picture > img {
+    width: 850px;
+}
+
+#portada-section > article {
+    width: 50%;
+    padding: 10%;
+    margin-top: -40px;
+}
+
+#portada-section > article > h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    border-radius: 5px;
+    color: white;
+    text-shadow: black 2px 2px 3px;
+    transition: 0.3s;
+}
+
+#typewritting {
+    animation: typewritting 0.4s infinite alternate-reverse ;
+}
+
+@keyframes typewritting {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#portada-section > article > p {
+    font-size: 3rem;
+    text-align: justify;
+    margin-bottom: 35px;
+    text-shadow: rgba(0, 0, 0, 0.733) 2px 2px 1px;
+}
+
+#portada-section > fieldset {
+    border: none;
+    margin-top: -8%;
+    width: 50%;
+    padding: 0 10%;
+    margin-bottom: 30px;
+}
+
+#portada-section > fieldset > button {
+    background-color: transparent;
+    font-family: "Freeman";
+    color: snow;
+    border: none;
+    border: 1px solid;
+    margin-right: 25px;
+    border-radius: 4%;
+    padding: 12px 30px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#portada-section > fieldset > button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+#info-section {
+    display: flex;
+    width: 100%;
+}
+
+#info-section {
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#info-section >article {
+    display: flex;
+    margin: 0 200px;
+    font-size: 1.5rem;
 }
