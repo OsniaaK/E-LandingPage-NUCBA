@@ -21,13 +21,13 @@ body {
 header {
     display: flex;
     flex: auto;
-    height: 65px;
+    height: 85px;
     background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(179, 2, 2));
     box-shadow: rgb(0, 0, 0) 0px 0px 8px;
 }
 
 #header-img-logo {
-    margin: 10%;
+    margin: 13%;
     width: 200px;
     box-shadow: black 0px 0px 15px;
 }
@@ -68,12 +68,12 @@ header {
     width: 40%;
     position: absolute;
     right: 0;
-    top: 10rem;
-    translate: -5%;
+    top: 20rem;
+    translate: -10%;
 }
 
 #portada-section > picture > img {
-    width: 750px;
+    width: 800px;
 }
 
 #portada-section > article {
@@ -83,7 +83,7 @@ header {
 }
 
 #portada-section > article > h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 30px;
     border-bottom: 1px solid;
     border-radius: 5px;
@@ -107,10 +107,10 @@ header {
 }
 
 #portada-section > article > p {
-    font-size: 2rem;
+    font-size: 2.75rem;
     text-align: justify;
     text-shadow: rgba(0, 0, 0, 0.733) 2px 2px 1px;
-    margin-bottom: -40px;
+    margin-bottom: -10%;
 
 }
 
@@ -118,7 +118,7 @@ header {
     border: none;
     width: 50%;
     padding: 0 10%;
-    margin-bottom: 65px;
+    margin-bottom: 3%;
 }
 
 #portada-section > fieldset > button {
