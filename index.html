@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E2 NAVBAR-Lautaro</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mediaquerys.css">
 </head>
 
 <body>
@@ -14,11 +15,31 @@
         <picture> <!-- Logo NAVBAR -->
             <img src="assets/imgs/logoheader-hitman.png" alt="Logo-OsniaaK" id="header-img-logo">
         </picture>
-        <nav id="nav-header">
+        <nav id="nav-header"> <!-- Menu Normal -->
             <a href="#">Home</a>
             <a href="#">Servicios</a>
             <a href="#">Informacion</a>
         </nav>
+
+        <form id="burguer-form"> <!-- Menu Hamburguesa -->
+            <button type="button" id="btn-burguer" popovertarget="nav-mobile" popovertargetaction="toggle">
+                <!-- SVG BURGUER -->
+                <svg 
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+        </form>
+
+        <nav id="nav-mobile" popover> <!-- Nav Burguer -->
+            <a href="#">Home</a>
+            <a href="#">Servicios</a>
+            <a href="#">Informacion</a>
+        </nav>
+
     </header>
 
     <main id="portada-section">

@@ -20,29 +20,38 @@ body {
 
 header {
     display: flex;
+    width: auto;
     flex: auto;
+    justify-content: space-around;
     height: 85px;
+    width: 100%;
     background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(179, 2, 2));
     box-shadow: rgb(0, 0, 0) 0px 0px 8px;
 }
 
+header > picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
 #header-img-logo {
-    margin: 13%;
-    width: 200px;
+    width: 100%;
     box-shadow: black 0px 0px 15px;
 }
 
 #nav-header {
     display: flex;
+    justify-content: end;
+    align-items: center;
     flex: auto;
-    justify-content: space-around;
-    margin: 0 0 0 30%;
-    padding: 20px;
+    width: 200px;
 }
 
 #nav-header > a {
     display: flex;
-    align-items: center;
+    margin-right: 10%;
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
@@ -58,6 +67,20 @@ header {
     transform: scale(1.2);
 }
 
+#burguer-form {
+    width: 29.999%;
+    display: none;
+}
+
+#btn-burguer {
+    display: none;
+}
+
+#btn-burguer > svg {
+    width: 55px;
+}
+
+
 #portada-section {
     display: flex;
     flex-direction: column;
@@ -65,15 +88,15 @@ header {
 }
 
 #portada-section > picture{
-    width: 40%;
+    width: 850px;
     position: absolute;
     right: 0;
-    top: 20rem;
+    top: 18rem;
     translate: -10%;
 }
 
 #portada-section > picture > img {
-    width: 800px;
+    width: 100%;
 }
 
 #portada-section > article {
@@ -114,8 +137,11 @@ header {
 
 }
 
-#portada-section > fieldset {
+fieldset {
     border: none;
+}
+
+#portada-section > fieldset {
     width: 50%;
     padding: 0 10%;
     margin-bottom: 3%;
