@@ -23,7 +23,7 @@ header {
     width: auto;
     flex: auto;
     justify-content: space-around;
-    height: 85px;
+    height: 55px;
     width: 100%;
     background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(179, 2, 2));
     box-shadow: rgb(0, 0, 0) 0px 0px 8px;
@@ -37,7 +37,7 @@ header > picture {
 }
 
 #header-img-logo {
-    width: 100%;
+    width: 70%;
     box-shadow: black 0px 0px 15px;
 }
 
@@ -46,14 +46,13 @@ header > picture {
     justify-content: end;
     align-items: center;
     flex: auto;
-    width: 200px;
 }
 
 #nav-header > a {
     display: flex;
     margin-right: 10%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     text-shadow: rgb(0, 0, 0) 1px 1px 1px;
     border-bottom: 1px solid transparent;
@@ -83,30 +82,20 @@ header > picture {
 
 #portada-section {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-}
-
-#portada-section > picture{
-    width: 850px;
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    translate: -10%;
-}
-
-#portada-section > picture > img {
-    width: 100%;
+    height: 100vh;
 }
 
 #portada-section > article {
     width: 50%;
     padding: 8%;
-    margin-top: -40px;
+    margin-top: -5%;
 }
 
 #portada-section > article > h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin-bottom: 30px;
     border-bottom: 1px solid;
     border-radius: 5px;
@@ -130,7 +119,7 @@ header > picture {
 }
 
 #portada-section > article > p {
-    font-size: 2.75rem;
+    font-size: 1.5rem;
     text-align: justify;
     text-shadow: rgba(0, 0, 0, 0.733) 2px 2px 1px;
     margin-bottom: -10%;
@@ -141,13 +130,12 @@ fieldset {
     border: none;
 }
 
-#portada-section > fieldset {
-    width: 50%;
-    padding: 0 10%;
-    margin-bottom: 3%;
+#portada-section > article > fieldset {
+    display: flex;
+    margin-top: 20%;
 }
 
-#portada-section > fieldset > button {
+#portada-section > article> fieldset > button {
     background-color: transparent;
     font-family: "Freeman";
     color: snow;
@@ -155,18 +143,37 @@ fieldset {
     border: 1px solid;
     margin-right: 25px;
     border-radius: 4%;
-    padding: 12px 30px;
-    font-size: 1.5rem;
+    padding: 12px 20px;
+    font-size: 1rem;
     transition: 0.3s;
     cursor: pointer;
 }
 
-#portada-section > fieldset > button:hover {
+#portada-section > article > fieldset > button:hover {
     background-color: white;
     color: black;
     transform: scale(1.2);
 }
 
+#portada-section > aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+#portada-section > aside > picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25%;
+}
+
+#portada-section > aside > picture > img {
+    width: 100%;
+}
+
 #info-section {
     display: flex;
     width: 100%;
@@ -175,7 +182,6 @@ fieldset {
 #info-section {
     width: 100%;
     display: flex;
-    margin-top: 80px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -184,5 +190,5 @@ fieldset {
 #info-section >article {
     display: flex;
     margin: 0 200px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
