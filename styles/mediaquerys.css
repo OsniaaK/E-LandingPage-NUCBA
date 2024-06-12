@@ -1,0 +1,97 @@
+@media (max-width: 1280px) {
+    #burguer-form {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 50px;
+    }
+
+    #btn-burguer {
+        background-color: transparent;
+        border: none;
+        width: 55px;
+    }
+
+    #btn-burguer > svg {
+        width: 100%;
+        stroke: white;
+        transition: all 250ms;
+    }
+
+    #btn-burguer > svg:hover {
+        scale: 1.1;
+        cursor: pointer;
+    }
+
+    #nav-mobile::backdrop {
+        backdrop-filter: blur(3px);
+        top: calc(55px + 1rem);
+    }
+
+    #nav-mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(7px) saturate(142%);
+        -webkit-backdrop-filter: blur(7px) saturate(142%);
+        background-color: rgba(255, 0, 0, 0.31);
+        border-radius: 12px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    #nav-mobile > a {
+        display: flex;
+        position: relative;
+        color: snow;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: black 1px 1px 3px;
+        padding: 20px;
+        transition: all 250ms;
+        border-bottom: 2px solid transparent;
+    }
+
+    #nav-mobile > a::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        border-radius: 15px;
+        background: linear-gradient(164deg, rgba(170,5,38,1) 47%, rgba(255,255,255,1) 82%);
+        transition: all 250ms;
+    }
+
+    #nav-mobile > a:hover::before {
+        width: 100%;
+        transition: all 250ms;
+    }
+
+    #nav-mobile:popover-open {
+        position: relative;
+        display: flex;
+        right: 0;
+        width: 25vw;
+        height: calc(100vh - 55px - 12rem);
+        left: 75vw;
+        top: calc(55px + 1rem);
+        animation: openburguer 500ms forwards ease-in-out;
+    }
+
+    @keyframes openburguer {
+        0% {
+            transform: translateX(25vw);
+        }
+
+        100% { 
+            transform: translateX(-47px);
+        }
+    }
+
+    #nav-header {
+        display: none;
+    }
+}
