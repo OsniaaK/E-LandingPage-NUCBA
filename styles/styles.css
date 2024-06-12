@@ -226,14 +226,9 @@ fieldset {
         opacity: 0;
     }
 
-    90% {
-        opacity: 1;
-        filter: drop-shadow(0 2px 1px);
-    }
-
     100% {
         opacity: 1;
-        filter: drop-shadow(0 2px 1px);
+        filter: drop-shadow(0 2px 1px white);
     }
 }
 
@@ -242,6 +237,7 @@ fieldset {
     max-width: 100%;
     opacity: 0;
     animation: AppearLogo 1.5s 900ms 1 forwards;
+    filter: drop-shadow(0 2px 1px transparent);
 }
 
 #info-section {
