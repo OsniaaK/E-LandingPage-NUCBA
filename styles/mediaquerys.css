@@ -1,8 +1,17 @@
+@media (max-width: 1366px) {
+    #datacards {
+        padding-top: 600px;
+        padding-bottom: 450px;
+    }
+
+    #contact > aside > iframe {
+        width: 450px;
+    }
+}
+
 @media (max-width: 1280px) {
     #burguer-form {
         display: flex;
-        justify-content: flex-end;
-        padding: 0 50px;
     }
 
     #btn-burguer {
@@ -24,7 +33,7 @@
 
     #nav-mobile::backdrop {
         backdrop-filter: blur(3px);
-        top: calc(55px + 1rem);
+        top: calc(54px);
     }
 
     #nav-mobile {
@@ -71,13 +80,13 @@
     }
 
     #nav-mobile:popover-open {
-        position: relative;
+        position: fixed;
         display: flex;
         right: 0;
-        width: 25vw;
-        height: calc(100vh - 55px - 12rem);
+        width: 250px;
+        height: 500px;
         left: 75vw;
-        top: calc(55px + 1rem);
+        top: calc(55px);
         animation: openburguer 500ms forwards ease-in-out;
     }
 
@@ -87,11 +96,208 @@
         }
 
         100% { 
-            transform: translateX(-47px);
+            transform: translateX(-70px);
         }
     }
 
     #nav-header {
         display: none;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    #contact > aside > iframe {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #contact {
+        padding-top: 55px;
+    }
+}
+
+@media (max-width: 900px) {
+    #info-section {
+        padding-bottom: 100px;
+    }
+} 
+
+@media (max-width: 768px) {
+    #info-section {
+        padding-bottom: 175px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    #nav-mobile:popover-open {
+        position: fixed;
+        display: flex;
+        right: 0;
+        width: 200px;
+        height: 400px;
+        left: 75vw;
+        top: calc(55px);
+        animation: openburguer 500ms forwards ease-in-out;
+    }
+
+    @keyframes openburguer {
+        0% {
+            transform: translateX(25vw);
+        }
+
+        100% { 
+            transform: translateX(-100px);
+        }
+    }
+
+    @keyframes LeftInicio {
+        0% {
+          transform: translateX(-150vw);
+        }
+
+        75% {
+            transform: translateX(7vw);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+    #nav-mobile > a {
+        font-size: 1.5rem;
+    }
+
+    #portada-section {
+        padding-top: 30%;
+        flex-direction: column;
+    }
+
+    #portada-section > article {
+        width: 100%;
+    }
+
+
+    #portada-section > article > h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #portada-section > article > p {
+        font-size: 1rem;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #portada-section > article > fieldset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #portada-section > article > fieldset > button:hover {
+        transform: scale(1.1);
+    }
+
+    #portada-section > aside > picture {
+        margin-right: 0;
+        width: 650px;
+    }
+
+    #portada-section > aside > picture > img {
+        width: 175%;
+    }
+
+    #datacards {
+        padding-top: 650px;
+        padding-bottom: 1150px;
+    }
+
+    #info-section {
+        padding-top: 100px;
+    }
+
+    #info-section > article {
+        margin: 0 25px;
+    }
+
+    #datacards > h2 {
+        font-size: 2rem;
+        padding-top: 500px;
+    }
+
+    #datacards > p {
+        font-size: 1rem;
+        padding-bottom: 75px;
+    }
+
+    #datacards > aside > article {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    #contact {
+        padding-top: 250px;
+        margin-bottom: 200px;
+    }
+
+
+    #contact > aside > iframe {
+        width: 350px;
+        padding-top: 50px;
+    }
+
+    footer > picture > img {
+        width: 200px;
+    }
+
+    footer > h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    #nav-mobile:popover-open {
+        position: fixed;
+        display: flex;
+        right: 0;
+        width: 200px;
+        height: 400px;
+        left: 75vw;
+        top: calc(55px);
+        animation: openburguer 500ms forwards ease-in-out;
+    }
+
+    @keyframes openburguer {
+        0% {
+            transform: translateX(25vw);
+        }
+
+        100% { 
+            transform: translateX(-125px);
+        }
+    }
+
+    #datacards > aside > article {
+        min-width: 275px;
+        max-width: 275px;
+    }
+
+
+    #contact > aside > iframe {
+        width: 350px;
+        margin-top: 50px;
+        padding: 15px 20px;
+    }
+
+    #portada-section > article > fieldset > button {
+        padding: 12px 10px;
     }
 }
