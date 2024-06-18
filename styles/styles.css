@@ -405,17 +405,17 @@ fieldset {
   border: 2px solid;
   border-radius: 5px;
   font-family: "Outfit";
-  transition: 0.15s all;
+  transition: 150ms all;
 }
 
 #contact > aside > form > input:focus {
   outline: none;
   box-shadow: white 0px 0px 10px;
-  transition: 0.15s all;
+  transition: 150ms all;
 }
 
 #contact > aside > form > input::placeholder {
-  color: snow;
+  color: white;
   font-family: "Outfit";
 }
 
@@ -434,7 +434,7 @@ fieldset {
   color: snow;
   padding: 10px 20px;
   border-radius: 5px;
-  transition: 0.2s all;
+  transition: 200ms all;
   font-family: "Outfit";
   cursor: pointer;
 }
